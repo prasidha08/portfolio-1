@@ -35,12 +35,13 @@ ul > li {
  display: none;
 }
 
-/* tablet view */
+.mobile-view-nav {
+    display: none;
+}
 
 
 /* mobile view */
 @media screen and (max-width : 800px) {
-    
    .mobile-view-nav {
     border: 2px solid red;
     height: 70px;
