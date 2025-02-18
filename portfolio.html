@@ -1,55 +1,70 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
 
-<head>
-    <link rel="stylesheet" href="responsive.css">
-</head>
-
-<body>
-
+  <body>
     <div class="container">
+      <!-- first page -->
 
-        <!-- first page -->
+      <div class="home">
+        <!-- browser view -->
+        <ul class="menu-nav-bar">
+          <li>Home</li>
+          <li>Portfolio</li>
+          <li>Resume</li>
+          <li>About</li>
+          <li>Contact us</li>
+        </ul>
 
-        <div class="home">
+        <!-- mobile view -->
 
-            <!-- browser view -->
-            <ul class="menu-nav-bar">
-                <li>Home</li>
-                <li>Portfolio</li>
-                <li>Resume</li>
-                <li>About</li>
-                <li>Contact us</li>
-            </ul> 
+        <div class="mobile-view-nav">
+          <!-- <div class="mobile-view-header"> -->
 
-            <!-- mobile view -->
+          <div class="hamburger-image" onclick="openMenu()">
+            <img
+              src="image/svg/menu-black.svg"
+              alt="image"
+              class="menu-icon"
+             
+            />
+          </div>
 
-            <div class="mobile-view-nav">
-                
-                <!-- <div class="mobile-view-header"> -->
+          <!-- </div> -->
 
-                        <img src="image/svg/menu-black.svg" alt="image" class="menu-icon">
-    
-                    <!-- </div> -->
-
-                    <ul class="mobile-menu-nav-bar">
-                        <li>Home</li>
-                        <li>Portfolio</li>
-                        <li>Resume</li>
-                        <li>About</li>
-                        <li>Contact us</li>
-                    </ul> 
-            </div>
-            
+          <ul class="mobile-menu-nav-bar">
+            <li>Home</li>
+            <li>Portfolio</li>
+            <li>Resume</li>
+            <li>About</li>
+            <li>Contact us</li>
+          </ul>
         </div>
+      </div>
 
+      <!-- portfolio -->
+      <div></div>
 
-        <!-- portfolio -->
-        <div></div>
-
-        <!--  -->
-
+      <!--  -->
     </div>
 
-</body>
+    <script>
+      function openMenu() {
+        const menuBar = document.getElementsByClassName("mobile-menu-nav-bar ");
+        const mainDiv = document.getElementsByClassName('mobile-view-nav')
+        console.log("TCL: openMenu -> menuBar", menuBar);
+        const m = menuBar[0];
+        const mainDi = menuBar[0]
+
+        if (m.style.display === "none") {
+          m.style.display = "flex";
+          mainDi.style.height="300px"
+        } else {
+          m.style.display = "none";
+        }
+      }
+    </script>
+  </body>
 </html>
