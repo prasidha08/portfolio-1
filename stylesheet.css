@@ -21,21 +21,18 @@ body{
     background-image: url(image/aboutme.jpeg);
 }
 
-.nav-menu {
-    background-color: #222;
-    position: sticky;
-    top:0px;
-    z-index:999
-
+#menu-btn{
+cursor: pointer;
+border: 1px solid rgb(183, 180, 180);
+padding:10px;
 }
 
-.nav-menu > li > a {
-    text-decoration: none; 
-    /* color: inherit; */
-    color:#fff !important;
 
+.nav-menu > li > a ,li > a {
+    text-decoration: none; 
+    color: inherit;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: bolder;
     letter-spacing: 0.1em;
     position: relative;
     text-transform: uppercase;
@@ -46,7 +43,6 @@ body{
     justify-content: center;
     margin-top: 2rem;
     list-style-type: none;
-    
 }
 
 li {
@@ -120,13 +116,33 @@ li {
     height: 500px;
 } */
 
-
+.mobile-view-header{
+   display: none;
+   height: 50px;
+}
 
 
 @media screen  and (max-width:800px){
 
     .resume {
         flex-direction: column;
+    }
+
+    /* #mobile-view-menu-list {
+       height: 300px;
+       transition: height 20s;
+    } */
+
+    .nav-menu {
+        display: none;
+    }
+
+    .mobile-view-header{
+        background-color: white;
+        padding: 20px;
+        display: block;
+        /* height: 50vh;
+        transition:height 5s */
     }
 
     .about-me {

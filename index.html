@@ -1,81 +1,141 @@
 <!DOCTYPE html>
 
 <html>
+  <head>
+    <link rel="stylesheet" href="stylesheet.css" />
+  </head>
+  <script>
+    function openMobileViewMenu() {
+      const div = document.getElementById("mobile-view-menu-list");
+      const header = document.getElementById("mobile-view-id");
 
-    <head>
-        <link rel="stylesheet" href="stylesheet.css">
-    </head>
+      if (div.style.display === "block") {
+          div.style.height = "0px";
+          div.style.transition= "height 0.2s linear"
+        //   div.style.display = "none";
 
-    <body>
-        <div class="main">
-            <div class="home" id="home_id">
-             <ul class="nav-menu">
-                <li><a href="#home_id">Home</a></li>
-                <li><a href="#portfolio_id">Portfolio</a></li>
-                <li><a href="#resume_id">Resume</a></li>
-                <li><a href="#about_me_id">About</a></li>
-                <li><a href="#contact_me_id">Contact</a></li>
-             </ul>
-            </div>
+      } else {
+        // div.style.display = "block"; // make the menu visible
+        div.style.height = "300px";
+        div.style.transition= "height 0.2s linear"
+        //    div.style.display = "block"; 
 
-            
+     
+      }
+    }
+  </script>
 
-            <div class="resume" id="resume_id">
-                <div class="resume-div education">
-                    <h2>Education
-                    </h2>
-                    <div class="card-div">
-                        <h3>March 2013-Present</h3>
-                        <h2>Masternal in information Technology</h2>
-                        <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-                        <h4>New York University</h4>
-                    </div>   <div class="card-div">
-                        <h3>March 2013-Present</h3>
-                        <h2>Masternal in information Technology</h2>
-                        <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-                        <h4>New York University</h4>
-                    </div>   <div class="card-div">
-                        <h3>March 2013-Present</h3>
-                        <h2>Masternal in information Technology</h2>
-                        <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-                        <h4>New York University</h4>
-                    </div>   <div class="card-div">
-                        <h3>March 2013-Present</h3>
-                        <h2>Masternal in information Technology</h2>
-                        <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-                        <h4>New York University</h4>
-                    </div>
+  <body>
+    <div class="main">
+      <div class="home" id="home_id">
+        <ul class="nav-menu">
+          <li><a href="#home_id">Home</a></li>
+          <li><a href="#portfolio_id">Portfolio</a></li>
+          <li><a href="#resume_id">Resume</a></li>
+          <li><a href="#about_me_id">About</a></li>
+          <li><a href="#contact_me_id">Contact</a></li>
+        </ul>
 
-                </div>
+        <div>
+          <div class="mobile-view-header" id="mobile-view-id">
+            <img
+              src="image/svg/menu.svg"
+              id="menu-btn"
+              onclick="openMobileViewMenu()"
+            />
+            <ul id="mobile-view-menu-list">
+              <li><a href="#home_id">Home</a></li>
+              <li><a href="#portfolio_id">Portfolio</a></li>
+              <li><a href="#resume_id">Resume</a></li>
+              <li><a href="#about_me_id">About</a></li>
+              <li><a href="#contact_me_id">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
-                <div class="resume-div experience">
-                    <h2>Experience
-                    </h2>
-                    <div class="card-div">
-                        <h3>March 2013-Present</h3>
-                        <h2>Masternal in information Technology</h2>
-                        <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-                        <h4>New York University</h4>
-                    </div>   <div class="card-div">
-                        <h3>March 2013-Present</h3>
-                        <h2>Masternal in information Technology</h2>
-                        <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-                        <h4>New York University</h4>
-                    </div>   <div class="card-div">
-                        <h3>March 2013-Present</h3>
-                        <h2>Masternal in information Technology</h2>
-                        <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-                        <h4>New York University</h4>
-                    </div>   <div class="card-div">
-                        <h3>March 2013-Present</h3>
-                        <h2>Masternal in information Technology</h2>
-                        <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-                        <h4>New York University</h4>
-                    </div>
+      <div class="resume" id="resume_id">
+        <div class="resume-div education">
+          <h2>Education</h2>
+          <div class="card-div">
+            <h3>March 2013-Present</h3>
+            <h2>Masternal in information Technology</h2>
+            <p>
+              Even the all-powerful Pointing has no control about the blind
+              texts it is an almost unorthographic.
+            </p>
+            <h4>New York University</h4>
+          </div>
+          <div class="card-div">
+            <h3>March 2013-Present</h3>
+            <h2>Masternal in information Technology</h2>
+            <p>
+              Even the all-powerful Pointing has no control about the blind
+              texts it is an almost unorthographic.
+            </p>
+            <h4>New York University</h4>
+          </div>
+          <div class="card-div">
+            <h3>March 2013-Present</h3>
+            <h2>Masternal in information Technology</h2>
+            <p>
+              Even the all-powerful Pointing has no control about the blind
+              texts it is an almost unorthographic.
+            </p>
+            <h4>New York University</h4>
+          </div>
+          <div class="card-div">
+            <h3>March 2013-Present</h3>
+            <h2>Masternal in information Technology</h2>
+            <p>
+              Even the all-powerful Pointing has no control about the blind
+              texts it is an almost unorthographic.
+            </p>
+            <h4>New York University</h4>
+          </div>
+        </div>
 
-                </div>
+        <div class="resume-div experience">
+          <h2>Experience</h2>
+          <div class="card-div">
+            <h3>March 2013-Present</h3>
+            <h2>Masternal in information Technology</h2>
+            <p>
+              Even the all-powerful Pointing has no control about the blind
+              texts it is an almost unorthographic.
+            </p>
+            <h4>New York University</h4>
+          </div>
+          <div class="card-div">
+            <h3>March 2013-Present</h3>
+            <h2>Masternal in information Technology</h2>
+            <p>
+              Even the all-powerful Pointing has no control about the blind
+              texts it is an almost unorthographic.
+            </p>
+            <h4>New York University</h4>
+          </div>
+          <div class="card-div">
+            <h3>March 2013-Present</h3>
+            <h2>Masternal in information Technology</h2>
+            <p>
+              Even the all-powerful Pointing has no control about the blind
+              texts it is an almost unorthographic.
+            </p>
+            <h4>New York University</h4>
+          </div>
+          <div class="card-div">
+            <h3>March 2013-Present</h3>
+            <h2>Masternal in information Technology</h2>
+            <p>
+              Even the all-powerful Pointing has no control about the blind
+              texts it is an almost unorthographic.
+            </p>
+            <h4>New York University</h4>
+          </div>
+        </div>
 
-                <!-- <div>Education</div>
+        <!-- <div>Education</div>
                 <div>Experience</div>
                 <div>
                     <h3>March 2013-Present</h3>
@@ -109,35 +169,28 @@
                     <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
                     <h4>New York University</h4>
                 </div> -->
+      </div>
 
-
-
-
-            </div>
-
-            <div class="about-me" id="about_me_id">
-                <div class="about-me-image">
-                    <!-- <img src="image/aboutme.jpeg" alt="about-me"> -->
-                </div>
-
-                <div class="aboutme-description">
-                    <h2>About me</h2>
-                    <p>
-                        Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
-
-                  A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
-                    </p>
-                    <div>
-                        <button class="hire-me-button">
-                          hire me
-                        </button>
-                        <button class="download-cv-button">
-                          Download cv
-                        </button>
-                    </div>
-                </div>
-            </div>
-
+      <div class="about-me" id="about_me_id">
+        <div class="about-me-image">
+          <!-- <img src="image/aboutme.jpeg" alt="about-me"> -->
         </div>
-    </body>
+
+        <div class="aboutme-description">
+          <h2>About me</h2>
+          <p>
+            Separated they live in Bookmarksgrove right at the coast of the
+            Semantics, a large language ocean. A small river named Duden flows
+            by their place and supplies it with the necessary regelialia. It is
+            a paradisematic country, in which roasted parts of sentences fly
+            into your mouth.
+          </p>
+          <div>
+            <button class="hire-me-button">hire me</button>
+            <button class="download-cv-button">Download cv</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
