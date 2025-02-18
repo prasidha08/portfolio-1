@@ -22,6 +22,7 @@ display: flex;
 gap: 4rem;
 justify-content: center;
 padding: 4rem;
+
 }
 
 ul > li {
@@ -37,6 +38,11 @@ ul > li {
 
 .mobile-view-nav {
     display: none;
+}
+
+.my-resume-container {
+display: flex;
+gap: 20px;
 }
 
 
@@ -82,7 +88,12 @@ ul > li {
         flex-direction: column;
         gap: 2rem;
         padding-left: 2rem;
-
     }
 
+    .my-resume-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        }
 }
