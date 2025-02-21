@@ -18,13 +18,13 @@ function openMenu() {
   // If the display is "none" or undefined, update the display to "flex" to show the menu options
   // If the display is "flex", update the display to "none" to hide the menu options
   if (
-    !mobileMenuNavbar.style.display ||
-    mobileMenuNavbar.style.display === "none"
+    !mainMobileViewObj.style.height ||
+    mainMobileViewObj.style.height === "70px"
   ) {
-    mobileMenuNavbar.style.display = "flex";
+    // mobileMenuNavbar.style.display = "flex";
     mainMobileViewObj.style.height = "450px";
   } else {
-    mobileMenuNavbar.style.display = "none";
+    // mobileMenuNavbar.style.display = "none";
     mainMobileViewObj.style.height = "70px";
   }
 }
