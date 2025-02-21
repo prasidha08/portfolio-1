@@ -29,6 +29,21 @@ function openMenu() {
   }
 }
 
+function closeMenuOnClick() {
+  const mobileMenuNavbar = document.getElementsByClassName("mobile-menu-nav-bar")[0];
+  const menuItems = mobileMenuNavbar.getElementsByTagName("a"); // Get all the anchor tags inside the mobile menu
+
+  // Loop through each item and add a click event listener
+  Array.from(menuItems).forEach((item) => {
+    item.addEventListener("click", function () {
+      mobileMenuNavbar.style.display = "none"; // Close the menu
+      const mainMobileViewObj = document.getElementsByClassName("mobile-view-nav")[0];
+      mainMobileViewObj.style.height = "70px"; // Reset the header height
+    });
+  });
+}
+
+closeMenuOnClick()
 
 window.addEventListener("scroll", () => {
   const scrollY = window.scrollY;
@@ -41,10 +56,13 @@ window.addEventListener("scroll", () => {
     browerMenuHeader.style.width = "100%";
     browerMenuHeader.style.backgroundColor = "white";
     browerMenuHeader.style.padding = "2rem";
+    browerMenuHeader.style.boxShadow = "0 0 10px rgba(0, 0, 0, 0.1)";
   } else {
     browerMenuHeader.style.position = "";
     browerMenuHeader.style.backgroundColor = "";
     browerMenuHeader.style.width = "";
     browerMenuHeader.style.padding = "4rem";
+    browerMenuHeader.style.boxShadow = "";
+
   }
 });
