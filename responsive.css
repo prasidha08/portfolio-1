@@ -9,6 +9,10 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
 .container {
     display: flex;
     flex-direction: column;
@@ -112,22 +116,22 @@ margin: auto;
 
 .html {
     width: 30%;
-    background-color: aquamarine;
+    background-color: #699df0;
 }
 
 .css {
     width: 80%;
-    background-color: rgb(174, 127, 255);
+    background-color: #ff0a54;
 }
 
 .js {
     width: 50%;
-    background-color: rgb(255, 210, 127);
+    background-color: #f1c40f;
 }
 
 .express {
     width: 75%;
-    background-color: rgb(24, 119, 87);
+    background-color: #629677;
 }
 .mongodb {
     width: 90%;
