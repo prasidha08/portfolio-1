@@ -8,14 +8,29 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap:4rem;
+    }
+
 .home {
     background-image: url(image/aboutme.jpeg);
     width: 100%;
     height: 100vh;
     background-size: cover; /* Ensures the image covers the container */
     background-repeat: no-repeat; 
+    margin-bottom: 2rem;
 }
 
+h1{
+    text-align: center;
+}
 
 .menu-nav-bar {
 display: flex;
@@ -36,14 +51,102 @@ ul > li {
 }
 
 .mobile-view-nav {
-    display: none;
+ display: none;
 }
 
+.my-resume-container {
+display: flex;
+gap: 20px;
+/* height: 100vh; */
+width: 80%;
+margin: auto;
+}
+
+
+.resume-box, .resume-box-list-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap:2rem
+}
+
+.card-div{
+    background-color: #f0f0f0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: clamp(10px,3vw,20px);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(10px,3vw,20px);
+}
+
+.skills-container {
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* border: 1px solid gray; */
+    margin: auto;
+    /* height: 400px; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:2rem;
+    padding:0.8rem
+}
+
+.skill-bar{
+    padding: 1rem;
+}
+
+.skill-bg {
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}
+
+.skill-score{
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-align: right;
+    color: white;
+    padding: 0.1rem;
+}
+
+.skill-level{
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: block;
+    font-weight: bold;
+}
+
+.html {
+    width: 30%;
+    background-color: #699df0;
+}
+
+.css {
+    width: 80%;
+    background-color: #ff0a54;
+}
+
+.js {
+    width: 50%;
+    background-color: #f1c40f;
+}
+
+.express {
+    width: 75%;
+    background-color: #629677;
+}
+.mongodb {
+    width: 90%;
+    background-color: rgb(199, 20, 133);
+}
 
 /* mobile view */
 @media screen and (max-width : 800px) {
    .mobile-view-nav {
     /* border: 2px solid red; */
+    position: fixed;
+    width: 100%;
+    /* top: 0; */
     height: 70px;
     background-color: aliceblue;
     display: flex;
@@ -82,7 +185,16 @@ ul > li {
         flex-direction: column;
         gap: 2rem;
         padding-left: 2rem;
-
     }
 
+    .my-resume-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        }
+
+        .skills-container {
+            grid-template-columns: repeat(1,1fr);
+        }
+        
 }

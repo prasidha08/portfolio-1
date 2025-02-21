@@ -8,14 +8,14 @@
     <div class="container">
       <!-- first page -->
 
-      <div class="home">
+      <div class="home" id="home-section">
         <!-- browser view -->
         <ul class="menu-nav-bar">
-          <li>Home</li>
-          <li>Portfolio</li>
-          <li>Resume</li>
-          <li>About</li>
-          <li>Contact us</li>
+          <li><a href="#home-section">Home</a></li>
+          <li><a href="#resume-section">Resume</a></li>
+          <li><a href="#skills-section">Skills</a></li>
+          <li><a href="#about-me-section">About me</a></li>
+          <li><a href="#contact-me-section">Contact me</a></li>
         </ul>
 
         <!-- mobile view -->
@@ -35,19 +35,155 @@
           <!-- </div> -->
 
           <ul class="mobile-menu-nav-bar">
-            <li>Home</li>
-            <li>Portfolio</li>
-            <li>Resume</li>
-            <li>About</li>
-            <li>Contact us</li>
+          <li><a href="#home-section">Home</a></li>
+          <li><a href="#resume-section">Resume</a></li>
+          <li><a href="#skills-section">Skills</a></li>
+          <li><a href="#about-me-section">About me</a></li>
+          <li><a href="#contact-me-section">Contact me</a></li>
           </ul>
         </div>
       </div>
 
       <!-- portfolio -->
-      <div></div>
 
-      <!--  -->
+      <!-- // brower > display flex ,direction row -->
+     <div id="resume-section">
+      <h1> My Resume</h1>
+     </div> 
+      
+      <div class="my-resume-container">
+
+        <!-- ed -->
+        <div class="resume-box">
+          <h2>Education</h2>
+
+          <div class="resume-box-list-wrapper">
+            <div class="card-div">
+              <h3>March 2013-Present</h3>
+              <h2>Masternal in information Technology</h2>
+              <p>
+                Even the all-powerful Pointing has no control about the blind
+                texts it is an almost unorthographic.
+              </p>
+              <h4>New York University</h4>
+            </div>
+
+            <div class="card-div">
+              <h3>March 2013-Present</h3>
+              <h2>Masternal in information Technology</h2>
+              <p>
+                Even the all-powerful Pointing has no control about the blind
+                texts it is an almost unorthographic.
+              </p>
+              <h4>New York University</h4>
+            </div>
+          </div>
+
+        </div> 
+
+        <!-- experience -->
+        <div class="resume-box">
+          <h2>Experience</h2>
+
+          <div class="resume-box-list-wrapper">
+            <div class="card-div">
+              <h3>March 2013-Present</h3>
+              <h2>Masternal in information Technology</h2>
+              <p>
+                Even the all-powerful Pointing has no control about the blind
+                texts it is an almost unorthographic.
+              </p>
+              <h4>New York University</h4>
+            </div>
+
+            <div class="card-div">
+              <h3>March 2013-Present</h3>
+              <h2>Masternal in information Technology</h2>
+              <p>
+                Even the all-powerful Pointing has no control about the blind
+                texts it is an almost unorthographic.
+              </p>
+              <h4>New York University</h4>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- My Skills -->
+
+      <h1 id="skills-section">My Skills</h1>
+
+      <div class="skills-container">
+
+
+        <!-- first skill -->
+        <div class="skill-bar">
+  
+            <div class="skill-level">Html</div>
+            <div class="skill-bg">
+              <div class="skill-score html">
+                30%
+              </div>
+            </div>
+          
+        </div>
+
+
+
+          <!-- first skill -->
+          <div class="skill-bar">
+  
+            <div class="skill-level">Css</div>
+            <div class="skill-bg">
+              <div class="skill-score css">
+                80%
+              </div>
+            </div>
+          
+        </div>
+
+
+              <!-- first skill -->
+              <div class="skill-bar">
+  
+                <div class="skill-level">Javascript</div>
+                <div class="skill-bg">
+                  <div class="skill-score js">
+                    50%
+                  </div>
+                </div>
+              
+            </div>
+
+            
+                  <!-- first skill -->
+        <div class="skill-bar">
+  
+          <div class="skill-level">Express</div>
+          <div class="skill-bg">
+            <div class="skill-score express">
+              75%
+            </div>
+          </div>
+        
+      </div>
+            <!-- first skill -->
+            <div class="skill-bar">
+              <div class="skill-level">Mongodb</div>
+              <div class="skill-bg">
+                <div class="skill-score mongodb">
+                  90%
+                </div>
+              </div>
+            
+          </div>
+  
+
+      </div>
+
+
     </div>
 
 
@@ -55,24 +191,4 @@
 
   <script src="index.js"></script>
 
-  <!-- <script>
-    function openMenu() {
-      const menuBar = document.getElementsByClassName("mobile-menu-nav-bar ");
-      const mainDiv = document.getElementsByClassName('mobile-view-nav')
-      console.log("TCL: openMenu -> menuBar", menuBar);
-      const m = menuBar[0];
-      console.log("TCL: openMenu -> m", m.style.display,"this is display")
-      const mainDi = mainDiv[0]
-
-      if (m.style.display === "none" || !m.style.display) {
-        m.style.display = "flex";
-        mainDi.style.height="360px";
-        mainDiv.style.transition ="height 15s"
-      } else {
-        m.style.display = "none";
-        mainDi.style.height="70px";
-
-      }
-    }
-  </script> -->
 </html>
